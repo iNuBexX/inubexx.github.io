@@ -802,53 +802,7 @@
 
 
 
-        
-                    <!-- <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i cltext-whiteass="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1 text-white">Internship</h5>
-                            <p class="mb-2 text-white"><strong>Centre National d'Informatique</strong> | <small>2020/06/01 - 2020/08/01</small></p>
-                            <p class="text-white-50">The CNI is a government data center in charge of providing IT services to administrations , ministries and personnel training.
-                                As my first professional experience I had the opportunity to meet with government engineers working on sensitive data
-                                I was assigned the following tasks:
-                                <ul class="text-white-50"><li>set up a small test data base using PostgreSQL on a linux server using a virtual machine</li>
-                                    <li> set up a slave master relationship between the latter and an other instance using the PostgreSQL replication feature</li></ul> 
-                          </p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1 text-white">Internship</h5>
-                            <p class="mb-2 text-white"><strong>Hippo Lab inc</strong> | <small>2022/06/01 - 2022/04/01</small></p>
-                            <p class="text-white-50">This Internship was my first encounter with remote international contractual paid work
-                                During this internship I had the opportunity to accomplish the following tasks:
-                                <ul class="text-white-50"><li> set up and maintain kafka clusters </li>
-                                    <li> preform basic system administration tasks from fixing a cron tab to maintaining storage </li>
-                                    <li> Write, enhance and release a sophisticated internet crawler to scrape business-cretical data using scrapy</li>
-                                    <li> Write well tested and production ready code </li>
-                                </ul> 
-                                 
-                               
-                               
-                            </p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1 text-white">Internship</h5>
-                            <p class="mb-2 text-white"><strong>Centre National d'Informatique</strong> | <small>2022/07/01 - 2022/09/01</small></p>
-                            <p class="text-white-50">Following my first Internship as i felt my work there  was not yet done i came back for a second one to build a high  availability application using a load balancer
-                               ,angular , spring boot and  the replication  feature during this internship i accomplished the following tasks:
-                            <ul class="text-white-50">
-                                <li>set up a virtual environement with different nodes</li>
-                                <li>set up and configure an ha load balancer node</li>
-                                <li>set up two intances/nodes , each of which is running an instance of the web application front end and backend</li>
-                                <li>set up two PostgreSQL nodes : a master node receiving traffic from both application and a slave node receiving replication traffic</li>
-                                <li>develop a proof of concept web application using mvn spring boot and angular with very simple ui </li>
-                                <li>benchmark the set up using apache benchmark tool</li>
-                            </ul>
-                            
-                            </p>
-                        </div>
-                    </div> -->
+       
                 </div>
                 
 
@@ -858,7 +812,21 @@
     </div>
 
 
+<script>
+function openPopup(popup) {
+	/* Open popup and make accessible screen readers */
+	$(popup).show().attr("aria-hidden", "false");
+	/* Focus on element to guide screen readers to popup */
+	$("#closePopup").focus();
+}
 
+function closePopup(popup) {
+	/* Close popup and hide from screen readers */
+	$(popup).hide().attr("aria-hidden", "true");
+	/* Focus screen readers back to button */
+	$("#openMyPopup").focus();
+}
+</script>
     <!-- Blog Start -->
     <div class="container-fluid pt-5" id="portfolio">
         <div class="container">
@@ -867,17 +835,27 @@
                 <h1 class="position-absolute text-uppercase text-primary">Projects</h1>
             </div>
             <div class="row">
+
                 <div class="col-lg-4 mb-5">
                     <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-1.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
+                        <img class="img-fluid rounded w-100" src="img/ppninja.png" alt="">
+                        
+                    </div>
+                    <h5 class="font-weight-medium mb-4 text-white-50"><strong class="text-white">purple ninja </strong> is the corwning jewl of my projects a video game where you controll the character using your own hand gestures</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" onClick="openPopup('#myPopup')">Demonstration</a>
+                    
+                    
+                    <div class="popup" id="myPopup" aria-hidden="true" onClick="if(event.target == this){closePopup('#myPopup');}">
+                        <div class="wrapper" aria-labelledby="popupTitle" aria-describedby="popupText" aria-modal="true">
+                            <h2 id="popupTitle">Purple Ninja</h2>
+                            <p id="popupText" class="text-white">This game is set in the naruto world and you control the character moves using your webcame and hand gestures , this is a simple proof of concept and not a finished project and is intended to show my capability of developping computer vision reliant applications</p>
+                            <button id="closePopup" onClick="closePopup('#myPopup');" aria-label="Close popup" class="btn btn-sm btn-outline-primary py-2">Close</button>
                         </div>
                     </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
+
                 </div>
+               
+
                 <div class="col-lg-4 mb-5">
                     <div class="position-relative mb-4">
                         <img class="img-fluid rounded w-100" src="img/blog-2.jpg" alt="">

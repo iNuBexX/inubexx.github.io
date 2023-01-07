@@ -2360,7 +2360,7 @@ textarea.form-control {
 
 .btn:focus, .btn.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(11, 206, 175, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(11, 141, 206, 0.25);
 }
 
 .btn.disabled, .btn:disabled {
@@ -2378,8 +2378,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #0BCEAF;
-  border-color: #0BCEAF;
+  background-color: #67d252;
+  border-color: #6b8cee;
 }
 
 .btn-primary:hover {
@@ -2404,13 +2404,13 @@ fieldset:disabled a.btn {
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #089e86;
+  background-color: #0084ff;
   border-color: #08917c;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(48, 213, 187, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(0, 183, 255, 0.5);
 }
 
 .btn-secondary {
@@ -10005,6 +10005,29 @@ background: linear-gradient(90deg, rgba(196,200,18,1) 0%, rgba(255,189,0,1) 37%,
 
 
 
+
+.popup {
+	background: rgba(100, 100, 100, 0.6);
+	position: fixed;
+	display: none;
+	z-index: 9999;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+	.wrapper {
+		max-width: 600px; 
+		width: 70%; 
+		position: fixed;
+		transform: translate(-50%, -50%);
+  		left: 50%;
+	   top: 50%;
+		background: #089e86 ;
+		padding: 30px;
+		border-radius: 10px;
+		box-shadow: 2px 2px 10px 0px rgba(#000000, 0.4);
+	}
 
 
 
