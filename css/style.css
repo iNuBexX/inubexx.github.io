@@ -10049,5 +10049,19 @@ background: linear-gradient(90deg, rgba(196,200,18,1) 0%, rgba(255,189,0,1) 37%,
     }
 
 
+    .myimg:hover{
+      color: #424242; 
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    opacity: 1;
+    transform: scale(3.15);
+    -ms-transform: scale(3.15); /* IE 9 */
+    -webkit-transform: scale(3.15); /* Safari and Chrome */
+    z-index:7;
+    position:relative;
+  }
 
 
