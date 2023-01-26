@@ -10015,18 +10015,22 @@ background: linear-gradient(90deg, rgba(196,200,18,1) 0%, rgba(255,189,0,1) 37%,
 	width: 100%;
 	left: 0;
 	top: 0;
+  overflow-y: auto;
+  scroll-behavior: auto;
 }
 	.wrapper {
 		max-width: 1280x; 
 		width: 70%; 
-		position: fixed;
-		transform: translate(-50%, -50%);
+		position: sticky;
+		
   		left: 50%;
-	   top: 50%;
+	   top: 10%;
 		background: #089e86 ;
 		padding: 30px;
 		border-radius: 10px;
 		box-shadow: 2px 2px 10px 0px rgba(#000000, 0.4);
+    overflow-y: auto;
+    scroll-behavior: auto;
 	}
 
 
