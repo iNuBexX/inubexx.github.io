@@ -10022,8 +10022,8 @@ background: linear-gradient(90deg, rgba(196,200,18,1) 0%, rgba(255,189,0,1) 37%,
 		max-width: 1280x; 
 		width: 70%; 
 		position: sticky;
-		
-  		/*left: 50%;*/
+		right: 15%;
+  		left: 15%;
 	   top: 50%;
 		background: #089e86 ;
 		padding: 30px;
