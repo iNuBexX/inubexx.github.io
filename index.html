@@ -790,6 +790,11 @@ function openPopup(popup) {
 
 function closePopup(popup) {
 	/* Close popup and hide from screen readers */
+    /* Stop the iframe by resetting its src */
+    let iframe = $(popup).find("iframe");
+    if (iframe.length) {
+        iframe.attr("src", iframe.attr("src"));
+    }
 	$(popup).hide().attr("aria-hidden", "true");
 	/* Focus screen readers back to button */
 	$("#openMyPopup").focus();
